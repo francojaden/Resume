@@ -17,30 +17,25 @@ body {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
 }
 
-.header-image {
-    max-width: 100%; /* Responsive width */
-    height: auto; /* Maintain aspect ratio */
-    margin-bottom: 20px; /* Space below the image */
-}
-
 h1 {
     margin-bottom: 20px; /* Space below the header */
 }
 
 .button-container {
     display: flex; /* Use flexbox for buttons */
-    justify-content: center; /* Center buttons */
-    gap: 20px; /* Space between buttons */
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center buttons horizontally */
+    margin-top: 20px; /* Space above the button container */
 }
 
 .button {
-    display: inline-block; /* Make the link look like a button */
-    padding: 15px 25px; /* Padding for the button */
-    background-color: #61dafb; /* Light blue background */
-    color: #282c34; /* Dark text color */
+    background-color: #61dafb; /* Button color */
+    color: black; /* Button text color */
+    padding: 15px 25px; /* Button padding */
     text-decoration: none; /* Remove underline */
-    border-radius: 10px; /* Rounded corners */
-    transition: background-color 0.3s, transform 0.2s; /* Transition effects */
+    border-radius: 5px; /* Rounded corners for buttons */
+    transition: background-color 0.3s; /* Transition for hover effect */
+    margin: 2px 0; /* Space between buttons */
 }
 
 .button:hover {
